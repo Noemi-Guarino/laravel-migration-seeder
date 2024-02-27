@@ -16,12 +16,12 @@ return new class extends Migration
               $table->string('Agency', 64);
               $table->string('DepartureStation', 64);
               $table->string('ArrivalStation', 40);
-              $table->Datetime('DepartureTime');
-              $table->Datetime('ArrivalTime');
-              $table->Varchar('TrainCode',10);
-              $table->Integer('NumberOfCarriages');
-              $table->Boolean('Intime');
-              $table->Boolean('Deleted');
+              $table->datetime('DepartureTime');
+              $table->datetime('ArrivalTime');
+              $table->string('TrainCode',10);
+              $table->integer('NumberOfCarriages');
+              $table->boolean('Intime');
+              $table->boolean('Deleted');
 
 
             $table->timestamps();
