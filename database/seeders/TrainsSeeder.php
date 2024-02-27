@@ -28,8 +28,8 @@ class TrainsSeeder extends Seeder
             $train->ArrivalTime = fake()->dateTime();
             $train->TrainCode = fake()->numerify();
             $train->NumberOfCarriages = fake()->numerify();
-            $train->Intime = fake()->boolean() ;
-            $train->Deleted = fake()->boolean() ;
+            $train->Intime = fake()->boolean();
+            $train->Deleted = fake()->boolean();
 
             // Lo salvo in persistenza
             $train->save();
